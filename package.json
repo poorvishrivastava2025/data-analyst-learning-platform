@@ -1,0 +1,23 @@
+{
+  "name": "analystpath-ai",
+  "version": "1.0.0",
+  "description": "AnalystPath AI - Responsive AI-Powered Data Analyst Learning Platform & Career Coach",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "data-analyst",
+    "learning-platform",
+    "ai-tutor",
+    "sql",
+    "python",
+    "excel",
+    "power-bi",
+    "tableau",
+    "statistics",
+    "hinglish"
+  ],
+  "author": "AnalystPath AI Team",
+  "license": "MIT"
+}
