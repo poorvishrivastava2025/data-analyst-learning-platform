@@ -1,0 +1,100 @@
+/* print.css - Optimized Layout for Downloadable / Printable Lesson Notes */
+
+@media print {
+  /* Hide non-printable UI elements */
+  .app-sidebar,
+  .app-header,
+  .tutor-drawer,
+  .lesson-actions-group,
+  .menu-toggle-btn,
+  .language-toggle,
+  .prompt-chip,
+  .btn,
+  .modal-overlay,
+  .footer {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .main-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .content-body {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .lesson-content-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .lesson-title {
+    font-size: 20pt;
+    color: #000000;
+    margin-bottom: 8pt;
+  }
+
+  .print-header {
+    display: block !important;
+    border-bottom: 2pt solid #000000;
+    padding-bottom: 10pt;
+    margin-bottom: 15pt;
+  }
+
+  .print-brand {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+
+  .print-meta {
+    font-size: 9pt;
+    color: #555555;
+  }
+
+  .key-terms-grid {
+    grid-template-columns: 1fr 1fr !important;
+    page-break-inside: avoid;
+  }
+
+  .term-card {
+    border: 1pt solid #cccccc !important;
+    background: #ffffff !important;
+  }
+
+  .formula-table {
+    border: 1pt solid #000000 !important;
+    page-break-inside: avoid;
+  }
+
+  .formula-table th, .formula-table td {
+    border: 1pt solid #cccccc !important;
+  }
+
+  .mistake-box {
+    border-left: 3pt solid #000000 !important;
+    background: #f5f5f5 !important;
+    color: #000000 !important;
+    page-break-inside: avoid;
+  }
+
+  .prose pre {
+    background: #f8f8f8 !important;
+    color: #000000 !important;
+    border: 1pt solid #cccccc !important;
+    page-break-inside: avoid;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+}
